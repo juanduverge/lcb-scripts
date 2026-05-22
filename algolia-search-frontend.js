@@ -522,9 +522,9 @@
   // ─── ARRANQUE ───────────────────────────────────────────────────────────────
   // Esperar a que Webflow termine de renderizar el CMS antes de capturar el template
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => setTimeout(initAlgolia, 800));
+    document.addEventListener('DOMContentLoaded', () => setTimeout(initAlgolia, 100));
   } else {
-    setTimeout(initAlgolia, 800);
+    setTimeout(initAlgolia, 100);
   }
 
 })();
